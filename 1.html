@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css" />
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="top">
+        <img src="img/logo.png" alt="" />
+      </div>
+    </div>
+    <div class="w">
+      <div class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About AYIT</a></li>
+          <li><a href="#">About CS&IE</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Student Work</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img width="1000px" height="500px" src="img/hz1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img width="1000px" height="500px" src="img/hz2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img width="1000px" height="500px" src="img/hz3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img width="1000px" height="500px" src="img/hz4.jpg" />
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- <div class="photos">
+                <img src="img/hz1.jpg">
+                <img src="img/hz2.jpg">
+                <img src="img/hz3.jpg">
+                <img src="img/hz4.jpg">
+              
+            </div> -->
+    </div>
+    <script src="./swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
+</html>
