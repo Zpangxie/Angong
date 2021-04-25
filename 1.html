@@ -1,69 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="1.css" />
     <link rel="stylesheet" href="./swiper-bundle.min.css" />
-  </head>
+</head>
 
-  <body>
-    <div>
-      <div class="top">
-        <img src="img/logo.png" alt="" />
-      </div>
+<body>
+    <div class="top">
+        <div class="top_roof">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Chinese</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="logo_bar">
+        <div class="logo_background">
+            <div class="logo_box">
+                <a href="#"><img src="img/logo 2.png" /></a>
+            </div>
+        </div>
     </div>
     <div class="w">
-      <div class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About AYIT</a></li>
-          <li><a href="#">About CS&IE</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Student Work</a></li>
-          <li><a href="#">Resources</a></li>
-        </ul>
-      </div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img width="1000px" height="500px" src="img/hz1.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img width="1000px" height="500px" src="img/hz2.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img width="1000px" height="500px" src="img/hz3.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img width="1000px" height="500px" src="img/hz4.jpg" />
-          </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About AYIT</a></li>
+                <li><a href="#">About CS&IE</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Student Work</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-      <!-- <div class="photos">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img width="1000px" height="500px" src="img/hz1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img width="1000px" height="500px" src="img/hz2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img width="1000px" height="500px" src="img/hz3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img width="1000px" height="500px" src="img/hz4.jpg" />
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- <div class="photos">
                 <img src="img/hz1.jpg">
                 <img src="img/hz2.jpg">
                 <img src="img/hz3.jpg">
                 <img src="img/hz4.jpg">
               
             </div> -->
+        <div class="main">
+            <div class="table1">
+                <dl>
+                    <dt>About US</dt>
+                    <dd>
+                        <i class="triangle_right"></i>
+                        <a href="">About Anyang Institute of Technology</a>
+                    </dd>
+                    <dd>
+                        <a href="#">About School of Computer Science and Information Engineering</a>
+                    </dd>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <dd class="more">
+                        <!-- <span style="background: none;"> -->
+                        <a href="">More</a>
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="table2">
+                <dl>
+                    <dt>Academic</dt>
+                    <dd>
+                        <a href="">The Demonstration Project of the Domestic-made Numerical<br />Control System's Application
+                            on Lathe Enterprises</a>
+                    </dd>
+                    <dd>
+                        <a href="#">The Study of Online Assessment of Upper Limb Muscle Spasticity<br />on Rehabilitation
+                            Training Robot</a>
+                    </dd>
+                    <dd class="more">
+                        <!-- <span style="background: none;"> -->
+                        <a href="">More</a>
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
     </div>
+    <footer class="footer">
+        <div class="footer_main">
+            <img src="img/logo1.png" />
+            <div class="footer_text">
+                <ul>
+                    <li>Contact us:</li>
+                    <li>Address: School of Computer, Anyang Institute of Technology, Anyang</li>
+                    <li>Zip Code:455000</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_end">
+            <span>Copyright © 2017 Anyang Institute of Technology.All rights reserved.</span>
+        </div>
+    </footer>
     <script src="./swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".swiper-container", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
-      });
+        var swiper = new Swiper(".swiper-container", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
     </script>
-  </body>
+</body>
+
 </html>
