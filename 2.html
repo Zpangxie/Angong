@@ -2,72 +2,71 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* 伪元素 */
-    .clean-float::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      clear: both;
-      zoom: 1;
-    }
-
-    .menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .menu .menu-item {
-      list-style: none;
-      float: left;
-      margin: 0 20px;
-      border: 1px solid pink;
-      position: relative;
-    }
-
-    /* 伪类 */
-    .menu .menu-item:hover {
-      background: skyblue;
-    }
-
-    .menu .menu-item:hover .sub-menu {
-      display: block;
-    }
-
-    /* 鼠标移动到 span 标签上时，span 标签的兄弟节点 .sub-menu 设置为 block */
-    /* .menu .menu-item span:hover+.sub-menu {
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 伪元素 */
+        
+        .clean-float::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            clear: both;
+            zoom: 1;
+        }
+        
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu .menu-item {
+            list-style: none;
+            float: left;
+            margin: 0 20px;
+            border: 1px solid pink;
+            position: relative;
+        }
+        /* 伪类 */
+        
+        .menu .menu-item:hover {
+            background: skyblue;
+        }
+        
+        .menu .menu-item:hover .sub-menu {
+            display: block;
+        }
+        /* 鼠标移动到 span 标签上时，span 标签的兄弟节点 .sub-menu 设置为 block */
+        /* .menu .menu-item span:hover+.sub-menu {
       display: block;
     } */
-
-    .menu .menu-item:first-child {
-      color: pink;
-    }
-
-    .sub-menu {
-      position: absolute;
-      /* display: none 让元素不在页面中显示，且不会保留元素原有的位置 */
-      display: none;
-      /* opacity: 0 改变元素透明度，让元素在页面隐藏，但是会保留元素原来的位置 */
-      /* opacity: 0; */
-    }
-
-    .sub-menu .sub-menu-item {
-      left: 0;
-      top: 0;
-    }
-
-    /* .a {
+        /* 选择第一个 */
+        
+        .menu .menu-item:first-child {
+            color: pink;
+        }
+        
+        .sub-menu {
+            position: absolute;
+            /* display: none 让元素不在页面中显示，且不会保留元素原有的位置 */
+            display: none;
+            /* opacity: 0 改变元素透明度，让元素在页面隐藏，但是会保留元素原来的位置 */
+            /* opacity: 0; */
+        }
+        
+        .sub-menu .sub-menu-item {
+            left: 0;
+            top: 0;
+        }
+        /* .a {
       width: 400px;
       height: 400px;
       background-color: pink;
@@ -85,7 +84,7 @@
       height: 50px;
       background-color: yellow;
     } */
-  </style>
+    </style>
 </head>
 
 <!-- 元素 B 相对于元素 A 定位 -->
@@ -99,38 +98,38 @@
 
 <body>
 
-  <!-- <div class="a">
+    <!-- <div class="a">
     <div class="b">
       <div class="c"></div>
     </div>
   </div> -->
 
-  <ul class="menu clean-float">
-    <li class="menu-item">
-      <span>主页</span>
-    </li>
+    <ul class="menu clean-float">
+        <li class="menu-item">
+            <span>主页</span>
+        </li>
 
-    <li class="menu-item">
-      <span>关于</span>
-    </li>
+        <li class="menu-item">
+            <span>关于</span>
+        </li>
 
-    <li class="menu-item">
-      <span>功能</span>
-      <!-- 子菜单 -->
-      <ul class="sub-menu">
-        <li class="sub-menu-item">
-          <span>唱歌</span>
+        <li class="menu-item">
+            <span>功能</span>
+            <!-- 子菜单 -->
+            <ul class="sub-menu">
+                <li class="sub-menu-item">
+                    <span>唱歌</span>
+                </li>
+                <li class="sub-menu-item">
+                    <span>跳舞</span>
+                </li>
+                <li class="sub-menu-item">
+                    <span>rap</span>
+                </li>
+            </ul>
+            <!-- 子菜单 -->
         </li>
-        <li class="sub-menu-item">
-          <span>跳舞</span>
-        </li>
-        <li class="sub-menu-item">
-          <span>rap</span>
-        </li>
-      </ul>
-      <!-- 子菜单 -->
-    </li>
-  </ul>
+    </ul>
 </body>
 
 </html>

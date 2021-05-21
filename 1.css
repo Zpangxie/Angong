@@ -4,13 +4,14 @@
 }
 
 .clearfix::after {
-    content:"\200B"; 
-    display:block; 
-    height:0; 
-    clear:both; 
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
 }
-.clearfix { 
-    *zoom:1; 
+
+.clearfix {
+    *zoom: 1;
 }
 
 .top {
@@ -63,6 +64,7 @@
     height: 50px;
     background-color: #fff;
     line-height: 50px;
+    position: relative;
 }
 
 .nav ul {
@@ -112,7 +114,7 @@
     color: #4e4e4e;
 }
 
-.main .table{
+.main .table {
     width: 480px;
 }
 
@@ -209,4 +211,45 @@
     color: white;
     line-height: 30px;
     font-size: 14px
+}
+
+
+/* 3.css */
+
+.clean-float::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+    zoom: 1;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .menu-item {
+    list-style: none;
+    margin: 0 20px;
+    border: 1px solid pink;
+}
+
+.menu .menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    /* display: none 让元素不在页面中显示，且不会保留元素原有的位置 */
+    /* opacity: 0 改变元素透明度，让元素在页面隐藏，但是会保留元素原来的位置 */
+    /* opacity: 0; */
+}
+
+.clear {
+    clear: both;
 }
