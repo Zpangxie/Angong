@@ -16,7 +16,7 @@
 
 .top {
     height: 30px;
-    background: #0a467d
+    background: #0a467d;
 }
 
 .top_roof {
@@ -39,24 +39,24 @@
 
 .logo_bar {
     height: 100px;
-    background: #269ae4
+    background: #269ae4;
 }
 
 .logo_background {
     width: 1600px;
     height: 100px;
     margin: 0 auto;
-    background: url(img/topbar_background.png)
+    background: url(img/topbar_background.png);
 }
 
 .logo_box {
     width: 1080px;
     height: 100px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .w {
-    width: 1001px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -68,18 +68,20 @@
 }
 
 .nav ul {
-    float: left;
-    margin-left: 25px;
+    /* float: left; */
     list-style-type: none;
 }
 
 .nav ul li {
     float: left;
+    width: calc(1000px / 7);
 }
 
 .nav ul li a {
     text-decoration: none;
-    padding: 0 32px;
+    text-align: center;
+    display: block;
+    width: 100%;
     font-size: 14px;
     color: #050505;
 }
@@ -188,7 +190,7 @@
 .footer_main img {
     position: absolute;
     left: 200px;
-    top: 40px
+    top: 40px;
 }
 
 .footer_text {
@@ -210,46 +212,78 @@
     text-align: center;
     color: white;
     line-height: 30px;
-    font-size: 14px
+    font-size: 14px;
 }
 
 
 /* 3.css */
 
-.clean-float::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    clear: both;
-    zoom: 1;
-}
-
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu .menu-item {
-    list-style: none;
-    margin: 0 20px;
-    border: 1px solid pink;
-}
-
-.menu .menu-item:hover .sub-menu {
-    display: block;
-}
-
 .sub-menu {
+    display: block;
+    /* border-radius: 100px/75px; */
+    border-radius: 0 0 15px 15px;
     position: absolute;
-    left: 100px;
-    top: 10px;
-    /* display: none 让元素不在页面中显示，且不会保留元素原有的位置 */
-    /* opacity: 0 改变元素透明度，让元素在页面隐藏，但是会保留元素原来的位置 */
-    /* opacity: 0; */
+    overflow: hidden;
+    left: 250px;
+    top: 50px;
 }
 
-.clear {
-    clear: both;
+.nav ul li:hover {
+    color: #fff;
+}
+
+.nav ul li ul li {
+    display: none;
+    width: 140px;
+    float: initial;
+    background: #269ae4;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav ul li:hover ul li {
+    display: block;
+    border: 1px solid #fff;
+    border-top: 0;
+}
+
+
+/* 4.css */
+
+.photo-chang {
+    margin: 0 -80px;
+    box-shadow: 0px 3px 4px #888888;
+}
+
+.photo-chang img {
+    display: block;
+    width: 100%;
+}
+
+.img-text {
+    padding: 40px;
+}
+
+.img-text img {
+    float: left;
+}
+
+.title-text {
+    float: left;
+    padding-top: 11px;
+    padding-left: 10px;
+}
+
+.title-1 {
+    border-bottom: 4px solid #25a7e4;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content p {
+    margin-bottom: 20px;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
